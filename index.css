@@ -1,0 +1,207 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:"Montserrat",sans-serif;
+    background:linear-gradient(135deg,#3b82f6,#60a5fa,#93c5fd);
+    min-height:100vh;
+    padding:40px;
+}
+
+.contenedor-principal{
+    width:1250px;
+    max-width:100%;
+    margin:auto;
+    display:flex;
+    background:#ffffff;
+    border-radius:25px;
+    overflow:hidden;
+    box-shadow:0 20px 45px rgba(0,0,0,.18);
+}
+
+/* PANEL IZQUIERDO */
+
+.infosec{
+    width:35%;
+    background:linear-gradient(180deg,#1e40af,#2563eb,#3b82f6);
+    color:white;
+    text-align:center;
+    padding:45px 35px;
+}
+
+.infosec img{
+    width:190px;
+    height:190px;
+    object-fit:cover;
+    border-radius:50%;
+    border:7px solid white;
+    box-shadow:0 10px 25px rgba(0,0,0,.35);
+    margin-bottom:30px;
+}
+
+.titulat{
+    font-size:23px;
+    margin:28px 0 18px;
+    padding-bottom:10px;
+    border-bottom:2px solid rgba(255,255,255,.3);
+    letter-spacing:1px;
+}
+
+.datos{
+    display:flex;
+    align-items:center;
+    margin:15px 0;
+    text-align:left;
+}
+
+.tipocont{
+    font-size:22px;
+    width:35px;
+}
+
+.infocont{
+    color:white;
+    text-decoration:none;
+    font-size:16px;
+}
+
+.lista-lat{
+    list-style:none;
+    margin-top:10px;
+}
+
+.lista-lat li{
+    background:rgba(255,255,255,.12);
+    padding:12px;
+    border-radius:10px;
+    margin-bottom:12px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.lista-lat li:hover{
+    background:rgba(255,255,255,.25);
+    transform:translateX(6px);
+}
+
+/* PANEL DERECHO */
+
+.info-general{
+    width:65%;
+    padding:55px;
+}
+
+.deshv{
+    color:#2563eb;
+    letter-spacing:5px;
+    font-size:18px;
+    font-weight:700;
+    margin-bottom:10px;
+}
+
+.nombre{
+    font-size:40px;
+    color:#1f2937;
+    margin-bottom:20px;
+}
+
+.textdesc{
+    color:#555;
+    line-height:1.8;
+    text-align:justify;
+    margin-bottom:35px;
+}
+
+.pro{
+    margin-bottom:30px;
+}
+
+.titulo-seccion-prin{
+    color:#2563eb;
+    font-size:24px;
+    margin-bottom:15px;
+    position:relative;
+    padding-left:18px;
+}
+
+.titulo-seccion-prin::before{
+    content:"";
+    position:absolute;
+    left:0;
+    top:4px;
+    width:6px;
+    height:26px;
+    background:#2563eb;
+    border-radius:10px;
+}
+
+.listedu{
+    list-style:none;
+}
+
+.listedu li{
+    background:#f8fbff;
+    border-left:6px solid #2563eb;
+    padding:16px 18px;
+    margin-bottom:12px;
+    border-radius:12px;
+    transition:.3s;
+    box-shadow:0 5px 15px rgba(0,0,0,.05);
+}
+
+.listedu li:hover{
+    transform:translateX(8px);
+    background:#edf5ff;
+}
+
+.volver{
+    text-align:center;
+    margin-top:45px;
+}
+
+.boton{
+    display:inline-block;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    padding:16px 40px;
+    border-radius:12px;
+    font-size:20px;
+    font-weight:700;
+    transition:.3s;
+    box-shadow:0 8px 20px rgba(37,99,235,.35);
+}
+
+.boton:hover{
+    background:#1d4ed8;
+    transform:scale(1.05);
+}
+
+@media(max-width:900px){
+
+    .contenedor-principal{
+        flex-direction:column;
+    }
+
+    .infosec,
+    .info-general{
+        width:100%;
+    }
+
+    .info-general{
+        padding:35px;
+    }
+
+    .nombre{
+        font-size:30px;
+    }
+
+    .infosec img{
+        width:160px;
+        height:160px;
+    }
+
+}
